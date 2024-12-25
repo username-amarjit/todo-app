@@ -2,25 +2,28 @@
 
 ## 1. **Set Up Project Structure**
    - Choose programming language and framework (e.g., Node.js with Express, Python with Flask/Django).
-    > I will use Django Rest Framework for this project. Done
+> I will use Django Rest Framework for this project. Done
    - Initialize a new project using your chosen framework.
-    > Done
+> Done
    - Set up the basic folder structure (e.g., `src`, `controllers`, `models`, `routes`).
-    > Using django's MVT and url,view,service,serialzer,model strcuture. Done
+> Using django's url,view,service,serialzer,model strcuture. Done
    
 ## 2. **Install Dependencies**
    - Install necessary dependencies like `express` (for Node.js), `flask` (for Python), or equivalent for the chosen stack.
-   > Done
+> Done
    - Install libraries for authentication (e.g., `jsonwebtoken`, `bcrypt` for Node.js).
-    > Encryption is already given by Django and using simpleJWT for authentication.
+> Encryption is already given by Django and using simpleJWT for authentication.
    - Install libraries for database interactions (e.g., `mongoose` for MongoDB or `sequelize` for SQL-based databases).
-    > Using SQLITE3 for this so by default no configuration needed in django.
+> Using SQLITE3 for this so by default no configuration needed in django.
 
 ## 3. **Database Setup**
    - Set up a database (e.g., MongoDB, PostgreSQL, MySQL).
+> alerady set up SQLITE.
    - Design the schema for users and tasks:
      - **Users Table**: `id`, `username`, `password_hash`
+> Using Default User model in Django.
      - **Tasks Table**: `id`, `title`, `description`, `status`, `created_at`, `updated_at`, `user_id`
+> Created. Done
 
 ## 4. **Implement Authentication**
    - Create a user registration route to add users to the database.
