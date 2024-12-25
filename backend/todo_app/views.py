@@ -24,8 +24,9 @@ def task(request,id=None):
                 resp_data,msg,code = srv.get_single_record(id)
                 return  JsonResponse({"response_data":resp_data,"response_msg":msg,"response_code":code})
             else:
+                status = request.GET.get('status', '')
                 srv = TaskSrv(request.user)
-                resp_data,msg,code = srv.get_all_records()
+                resp_data,msg,code = srv.get_all_records(status)
                 return  JsonResponse({"response_data":resp_data,"response_msg":msg,"response_code":code})
                 
         except Exception as ex:

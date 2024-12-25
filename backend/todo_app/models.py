@@ -7,7 +7,7 @@ class Task(models.Model):
     description = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    completed = models.BooleanField(default=False)
+    is_completed = models.BooleanField(default=False)
     
 
 # Create your models here.

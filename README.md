@@ -47,12 +47,15 @@
 
 ## 6. **Add Status Filters for Tasks**
    - Implement a feature to filter tasks based on their status (e.g., "completed", "pending", etc.).
+> Done
 
 ## 7. **Validation and Error Handling**
    - Validate incoming data (e.g., check if task title is provided, if password meets criteria).
+> Done
    - Implement error handling for common errors (e.g., invalid JWT, task not found, etc.).
+> Done
 
-## 8. **Testing**
+<!-- ## 8. **Testing**
    - Write unit tests for authentication logic (e.g., registration, login).
    - Write integration tests for task CRUD operations.
    - Use tools like `jest` or `mocha` for testing.
@@ -72,4 +75,4 @@
 
 ## 12. **Optimize and Refactor Code**
    - Refactor the code for clarity and maintainability.
-   - Optimize database queries to handle large amounts of data efficiently.
+   - Optimize database queries to handle large amounts of data efficiently. -->

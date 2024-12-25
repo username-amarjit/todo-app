@@ -25,9 +25,12 @@ class TaskSrv:
             print(traceback.format_exc())        
             return str(ex),"Error while creating a task record.","S_02"
     
-    def get_all_records(self):
+    def get_all_records(self,status):
         try:
             all_task_queryset = Task.objects.filter(user_id=self.user.id)
+            if status is not None and status != "all":
+                status_val = status == 'completed'
+                all_task_queryset = all_task_queryset.filter(is_completed=status_val)
             task_serializer = TaskSerializer(all_task_queryset,many=True)
             return task_serializer.data,"All Records fetched SuccessFully.","1"
         except Exception as ex:
