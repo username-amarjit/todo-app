@@ -27,13 +27,19 @@
 
 ## 4. **Implement Authentication**
    - Create a user registration route to add users to the database.
+> Done
    - Create a user login route that generates and returns a JWT token.
+> Done
    - Implement a middleware to validate the JWT token for protected routes.
+> Done
 
 ## 5. **CRUD Operations for Tasks**
    - **Create Task**: Implement a route to create a new task for a user.
+> Done
    - **Get Tasks**: Implement a route to get all tasks (with optional filters by status).
+> Done
    - **Get Task Details**: Implement a route to get details of a specific task.
+> Done
    - **Update Task**: Implement a route to update the status of a task.
    - **Delete Task**: Implement a route to delete a task.
 
