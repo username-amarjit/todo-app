@@ -2,13 +2,19 @@
 
 ## 1. **Set Up Project Structure**
    - Choose programming language and framework (e.g., Node.js with Express, Python with Flask/Django).
+    > I will use Django Rest Framework for this project. Done
    - Initialize a new project using your chosen framework.
+    > Done
    - Set up the basic folder structure (e.g., `src`, `controllers`, `models`, `routes`).
+    > Using django's MVT and url,view,service,serialzer,model strcuture. Done
    
 ## 2. **Install Dependencies**
    - Install necessary dependencies like `express` (for Node.js), `flask` (for Python), or equivalent for the chosen stack.
+   > Done
    - Install libraries for authentication (e.g., `jsonwebtoken`, `bcrypt` for Node.js).
+    > Encryption is already given by Django and using simpleJWT for authentication.
    - Install libraries for database interactions (e.g., `mongoose` for MongoDB or `sequelize` for SQL-based databases).
+    > Using SQLITE3 for this so by default no configuration needed in django.
 
 ## 3. **Database Setup**
    - Set up a database (e.g., MongoDB, PostgreSQL, MySQL).
