@@ -41,7 +41,9 @@
    - **Get Task Details**: Implement a route to get details of a specific task.
 > Done
    - **Update Task**: Implement a route to update the status of a task.
+> Done
    - **Delete Task**: Implement a route to delete a task.
+> Done
 
 ## 6. **Add Status Filters for Tasks**
    - Implement a feature to filter tasks based on their status (e.g., "completed", "pending", etc.).
